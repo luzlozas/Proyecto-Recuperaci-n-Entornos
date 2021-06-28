@@ -8,7 +8,7 @@ class TestClase {
 	Clase name = new Clase();
 
 	@Test
-	void TestAlDarleASaludarUnNumero() {
+	void TestAlDarleASaludarUnNumeroDevuelveUnMensajeDeError() {
 		
 		String esperado = "Lo que me mandas es un numero";
 		String obtenido = name.saludar("20");
@@ -18,7 +18,7 @@ class TestClase {
 	}
 	
 	@Test
-	void TestAlDarleASaludarUnString() {
+	void TestAlDarleASaludarUnStringDevuelveElSaludo() {
 		
 		String esperado = "Hola Luz";
 		String obtenido = name.saludar("Luz");
@@ -28,7 +28,7 @@ class TestClase {
 	}
 	
 	@Test
-	void TestAlDarleUnValorVacio() {
+	void TestAlDarleUnValorVacioDevuelveMensajeDeError() {
 		
 		String esperado = "Lo que me mandas está vacío";
 		String obtenido = name.saludar("");
@@ -38,7 +38,7 @@ class TestClase {
 	
 	@Test
 	
-	void TestAlDarleUnValorNuméricoYUnNombre() {
+	void TestAlDarleUnValorNuméricoYUnNombreDevuelveElSaludo() {
 		
 		String esperado = "Hola 12 Luz";
 		String obtenido = name.saludar("12 Luz");
