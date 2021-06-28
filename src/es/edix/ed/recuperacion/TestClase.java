@@ -14,7 +14,7 @@ class TestClase {
 		String obtenido = name.saludar("20");
 		
 		
-		assertEquals(esperado,obtenido,"Debería devolver una excepción");
+		assertEquals(esperado,obtenido,"Debería devolver Lo que me mandas es un número");
 	}
 	
 	@Test
@@ -109,6 +109,19 @@ class TestClase {
 		double esperado = 8.4;
 		
 		assertEquals(esperado, name.matematicas(x, y, op), "Debería devolver un 8.4");
+		
+	}
+	
+	@Test
+	
+	void TestSiEscribimosMalLaOperación() {
+		
+		int x = 10;
+		int y = 2;
+		String op = "sUMA";
+		double esperado = 10.2;
+		
+		assertEquals(esperado, name.matematicas(x, y, op), "Debería devolver un 10.2");
 		
 	}
 	

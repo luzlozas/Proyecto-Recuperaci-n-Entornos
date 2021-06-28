@@ -6,20 +6,7 @@ import org.junit.platform.commons.util.StringUtils;
 
 /**
  * Esta clase contiene dos métodos, Saludar y Matematicas. <br>
- * <ul>
- * <li>Saludar detecta el tipo de parámetro y, en función de esto, devuelve un valor u otro.<br>
  * 
- * Excepciones metodo Saludar
- * <ol>
- * <li> Si no consigue convertir el parámetro en Número devuelve una excepción NumberFormatException <br>
- * </ol>
- * <li>Matematicas realiza operaciones matemáticas sencillas como sumar, restar, multiplicar y dividir introduciendo 3 parámetros.<br>
- * 
- * Defaulter metodo Matematicas
- * <ol>
- * <li> Si la operación no está dentro de las posibilidades nos devuelve un valor combinado de los Números introducidos.<br>
- * </ol>
- * </ul>
  * 
  * @author luzlo
  * @version 1.0
